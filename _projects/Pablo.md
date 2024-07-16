@@ -12,5 +12,5 @@ category: two
 
 <div class="projects d-none centerthat" baer-tag="pablo-arrival"  id="pablo-unlock">
 <br>
-<img src = "{{ site.url }}{{ site.baseurl }}assets/img/thanksalot.jpg" alt="thanks!" height="400px">
+<img src = "../assets/img/thanksalot.jpg" alt="thanks!" height="400px">
 </div> 
