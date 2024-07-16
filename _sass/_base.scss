@@ -220,6 +220,7 @@ ul.task-list input[type="checkbox"] {
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
+  text-align: center;
 
   a {
     color: inherit;
@@ -531,6 +532,7 @@ footer.sticky-bottom {
 }
 
 .post-title {
+  text-align: center;
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
@@ -1293,4 +1295,15 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
+}
+
+
+.centerthat {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
