@@ -11,10 +11,11 @@ horizontal: false
 
 ---
 
-<div class="row justify-content-sm-center">
+<div class="centerthat row">
   <span style="font-size:2em;"><b>Hello brave traveler, the bears welcome you.</b> </span>
 
   <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1c-NVS8Yufc045DR5Pyh072xz5m2k9iA&ehbc=2E312F" width="384" height="288"></iframe>
+
   <form class="baer-challenge" baer-tag="a">
     <input>
   </form>
@@ -37,7 +38,7 @@ horizontal: false
   
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
-  <div class="container">
+  <div class="container centerthat">
     <div class="row row-cols-1 row-cols-md-2">
     {% for project in sorted_projects %}
       {% include projects_horizontal.liquid %}
@@ -45,7 +46,7 @@ horizontal: false
     </div>
   </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
+  <div class="row row-cols-1 row-cols-md-3 centerthat">
     {% for project in sorted_projects %}
       {% include projects.liquid %}
     {% endfor %}
