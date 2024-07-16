@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://endorpersand.github.io/buddy-baeren/sitemap.xml
+Sitemap: https://endorpersand.github.io/buddy-baeren//sitemap.xml
