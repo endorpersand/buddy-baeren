@@ -1,6 +1,6 @@
 const UNLOCKED_KEY = "unlocked";
 const BAER_TAG = "baer-tag";
-const HIDDEN = "d-hidden";
+const HIDDEN = "d-none";
 
 var unlocked = new Set();
 

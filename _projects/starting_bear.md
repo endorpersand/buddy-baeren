@@ -22,7 +22,7 @@ horizontal: false
 </div>
 
 <!-- pages/projects.md -->
-<div class="projects d-hidden" id="baer-exit-cards" baer-tag="a">
+<div class="projects d-none" id="baer-exit-cards" baer-tag="a">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
