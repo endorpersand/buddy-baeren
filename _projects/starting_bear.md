@@ -1,13 +1,22 @@
 ---
 layout: page
 title: START HERE!
-description: Solve the puzzle to progress!
+
 img: assets/img/12.jpg
 importance: 1
 category: start
 display_categories: [two]
 horizontal: false
 ---
+
+---
+
+<div class="row justify-content-sm-center">
+<span style="font-size:2em;"><b>Hello brave traveler, the bears welcome you.</b> </span>
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1c-NVS8Yufc045DR5Pyh072xz5m2k9iA&ehbc=2E312F" width="384" height="288"></iframe>
+
+</div>
 
 <!-- pages/projects.md -->
 <div class="projects">
