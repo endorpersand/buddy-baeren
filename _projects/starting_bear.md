@@ -14,11 +14,15 @@ horizontal: false
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
+ <!-- <a id="{{ category }}" href=".#{{ category }}">-->
+  {% if project.importance == 1 %}
+      <h2 class="category">start</h2>
+  {% else %}
+    <h2 class="category">next</h2>
+  {% endif %}
+ <!-- </a>-->
+    {% assign categorized_projects = site.projects | where: "category", category %}
+    {% assign sorted_projects = categorized_projects | sort: "importance" %}
   
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
