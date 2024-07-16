@@ -1,0 +1,1 @@
+console.log("enabling form script");for(let e of document.querySelectorAll("form.baer-challenge"))e instanceof HTMLFormElement&&e.addEventListener("submit",t=>{t.preventDefault();let l=e.querySelector("input");if(null!=l&&"answer"==l.value){let t=e.getAttribute(BAER_TAG);unlockTag(t)}});
