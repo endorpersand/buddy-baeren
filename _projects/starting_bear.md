@@ -12,14 +12,16 @@ horizontal: false
 ---
 
 <div class="row justify-content-sm-center">
-<span style="font-size:2em;"><b>Hello brave traveler, the bears welcome you.</b> </span>
+  <span style="font-size:2em;"><b>Hello brave traveler, the bears welcome you.</b> </span>
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1c-NVS8Yufc045DR5Pyh072xz5m2k9iA&ehbc=2E312F" width="384" height="288"></iframe>
-
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1c-NVS8Yufc045DR5Pyh072xz5m2k9iA&ehbc=2E312F" width="384" height="288"></iframe>
+  <form class="baer-challenge" baer-tag="a">
+    <input>
+  </form>
 </div>
 
 <!-- pages/projects.md -->
-<div class="projects">
+<div class="projects d-hidden" id="baer-exit-cards" baer-tag="a">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
