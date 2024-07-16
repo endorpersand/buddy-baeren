@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: Buddy Bear Hunt
+permalink: /
+description: Welcome to the buddy bear hunt
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 1
+display_categories: [start]
 horizontal: false
 ---
 
@@ -19,6 +19,7 @@ horizontal: false
   </a>
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
+  
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
   <div class="container">
