@@ -1298,7 +1298,7 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 
-.centerthat {
+.centerhorizontal {
     display: flex;
     justify-content: center;
     display: flex;
@@ -1306,6 +1306,15 @@ ninja-keys::part(ninja-input-wrapper) {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.audioadjustment {
+  
+  max-width: 250px;
+}
+
+.widthconstraint{
+  max-width: 100vw;
 }
 
 input {
