@@ -11,32 +11,36 @@ horizontal: false
 
 ---
 
-<div class="d-flex flex-row" style="gap: 10px">
-  {% include figure.liquid path="assets/img/baer/sample.png" title="bear-1" class="img-fluid rounded" width="100vw" %}
-  <div>Hello! I'm Beary McBearFace and I love being a bear! Are you a bear?</div>
-</div>
+<!-- Dialogue box 1 -->
+{% capture d1 %}
+  <!-- you can put HTML in here -->
+  Hello! I'm Beary McBearFace and I love being a bear! Are you a bear?
+{% endcapture %}
+{% include baer/dialogue.liquid path="assets/img/baer/sample.png" title="bear-1" text=d1 %}
 
-<div class="d-flex flex-row justify-content-center" style="gap: 10px">
-  <button>Yes</button>
-  <button>No</button>
-  <button>Eww no</button>
-</div>
+<!-- choose your own dialogue -->
+{% include baer/button_array.liquid key="dialogue-2" names="Yes,No,Eww no" separator="," %}
 
-<div class="d-flex flex-row" style="gap: 10px">
-  {% include figure.liquid path="assets/img/baer/sample.png" title="bear-1" class="img-fluid rounded" width="100vw" %}
-  <div>Well, fine. Here's a puzzle.</div>
-</div>
+<div class="d-none" baer-content="dialogue-2">
+  <!-- Dialogue box 2 -->
+  {% capture d2 %}
+    <span baer-content="dialogue-2" baer-option="0">That's okay! Here's a puzzle.</span>
+    <span baer-content="dialogue-2" baer-option="1">That sucks! Here's a puzzle.</span>
+    <span baer-content="dialogue-2" baer-option="2">Okay, rude. Here's a puzzle.</span>
+  {% endcapture %}
+  {% include baer/dialogue.liquid path="assets/img/baer/sample.png" title="bear-1" text=d2 %}
 
-<br>
-<div class="centerthat row">
-  <h2><b>Puzzle</b></h2>
-  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1c-NVS8Yufc045DR5Pyh072xz5m2k9iA&ehbc=2E312F" width="384" height="288"></iframe>
-<br>
+  <br>
+  <div class="centerthat row">
+    <h2><b>Puzzle</b></h2>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1c-NVS8Yufc045DR5Pyh072xz5m2k9iA&ehbc=2E312F" width="384" height="288"></iframe>
+  <br>
 
-<h2> What is the marker color on the map? </h2>
-  <form baer-key="hotel-palace-puzzle">
-    <input placeholder="Enter your answer...">
-  </form>
+  <h2> What is the marker color on the map? </h2>
+    <form baer-key="hotel-palace-puzzle">
+      <input placeholder="Enter your answer...">
+    </form>
+  </div>
 </div>
 
 <!-- pages/projects.md -->
