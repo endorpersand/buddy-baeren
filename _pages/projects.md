@@ -5,7 +5,7 @@ permalink: /
 description: Welcome to the buddy bear hunt!
 nav: true
 nav_order: 1
-display_categories: [start]
+display_categories: [start, reset]
 horizontal: false
 ---
 
@@ -55,3 +55,4 @@ horizontal: false
   {% endif %}
   {% endfor %}  
 {% endif %}
+

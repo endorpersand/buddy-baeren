@@ -1,0 +1,12 @@
+<div class="d-flex flex-row justify-content-center">
+    <button type="button" class="btn btn-danger" onclick="_reset()">
+        Click here to reset.
+    </button>
+</div>
+
+<script>
+function _reset() {
+    localStorage.clear();
+    window.location.href = "{{ site.baseurl | prepend: site.url }}";
+}
+</script>

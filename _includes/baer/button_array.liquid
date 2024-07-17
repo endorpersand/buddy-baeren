@@ -1,0 +1,11 @@
+{% assign separator = include.separator | default: "," %}
+{% assign button_names = include.names | split: separator %}
+<div class="d-flex flex-row justify-content-center" style="gap: 10px">
+  <form baer-key="{{include.key}}">
+    {% for btn in button_names %}
+        <button type="button" class="btn btn-light" onclick="pressButton('{{include.key}}', {{forloop.index0}})">
+            {{btn}}
+        </button>
+    {% endfor %}
+  </form>
+</div>
