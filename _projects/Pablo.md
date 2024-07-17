@@ -6,10 +6,10 @@ img: assets/img/3.jpg
 importance: 2
 category: two
 ---
-<form class="pablo-arrive centerthat" baer-tag="pablo-arrival" unlock-content="pablo-unlock">
+<form class="centerthat" baer-key="pablo-puzzle">
     <input placeholder="Enter your answer...">
 </form>
 
-<div class="projects d-none centerthat" baer-tag="pablo-arrival"  id="pablo-unlock">
+<div class="projects d-none centerthat" baer-content="pablo-puzzle">
     {% include figure.liquid path="assets/img/thanksalot.jpg" title="thanks!" class="img-fluid rounded z-depth-1" %}
-</div> 
+</div>
