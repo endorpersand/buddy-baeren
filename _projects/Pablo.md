@@ -11,6 +11,5 @@ category: two
 </form>
 
 <div class="projects d-none centerthat" baer-tag="pablo-arrival"  id="pablo-unlock">
-<br>
-<img src = "../assets/img/thanksalot.jpg" alt="thanks!" height="400px">
+    {% include figure.liquid path="assets/img/thanksalot.jpg" title="thanks!" class="img-fluid rounded z-depth-1" %}
 </div> 
