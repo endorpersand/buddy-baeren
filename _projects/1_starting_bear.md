@@ -11,9 +11,25 @@ horizontal: false
 
 ---
 
-<div class="centerthat row">
-  <span style="font-size:2em;"><b>Hello brave traveler, the bears welcome you.</b> </span>
+<div class="d-flex flex-row" style="gap: 10px">
+  {% include figure.liquid path="assets/img/baer/sample.png" title="bear-1" class="img-fluid rounded" width="100vw" %}
+  <div>Hello! I'm Beary McBearFace and I love being a bear! Are you a bear?</div>
+</div>
 
+<div class="d-flex flex-row justify-content-center" style="gap: 10px">
+  <button>Yes</button>
+  <button>No</button>
+  <button>Eww no</button>
+</div>
+
+<div class="d-flex flex-row" style="gap: 10px">
+  {% include figure.liquid path="assets/img/baer/sample.png" title="bear-1" class="img-fluid rounded" width="100vw" %}
+  <div>Well, fine. Here's a puzzle.</div>
+</div>
+
+<br>
+<div class="centerthat row">
+  <h2><b>Puzzle</b></h2>
   <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1c-NVS8Yufc045DR5Pyh072xz5m2k9iA&ehbc=2E312F" width="384" height="288"></iframe>
 <br>
 
@@ -23,20 +39,8 @@ horizontal: false
   </form>
 </div>
 
-<div class="projects d-none centerthat" baer-content="hotel-palace-puzzle">
-  <br>
-  <h3>[Insert audio, dialogue, and puzzle here]</h3>
-  <br>
-  <h3>Puzzle: the answer is answer</h3>
-
-  <h2> Solve the puzzle.</h2><br>
-  <form baer-key="hotel-palace-leave">
-    <input placeholder="Enter your answer...">
-  </form>
-</div>
-
 <!-- pages/projects.md -->
-<div class="projects d-none" baer-content="hotel-palace-leave">
+<div class="projects d-none" baer-content="hotel-palace-puzzle">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}

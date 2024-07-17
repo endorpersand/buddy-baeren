@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Bear 2
-description: the end of the demo :(
+title: Next
+description: Proceed!
 img: assets/img/3.jpg
 importance: 2
 category: two
