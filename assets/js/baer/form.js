@@ -26,7 +26,7 @@ for (let el of document.querySelectorAll(`form[${BAER_KEY_ATTR}]`)) {
         if (input != null && tag != null) {
             let answer = ANSWERS[tag];
             if (answer != null) {
-                if (input.value == answer) {
+                if (input.value.toLowerCase() == answer) {
                     input.classList.add("baer-right");
                     unlockTag(tag);
                 } else {
