@@ -91,7 +91,7 @@ display_categories: [five]
 </div>
 
 <div class="d-flex flex-column align-items-center" style="gap: 5px">
-  <i>Creator? Who could be his creator? Where could I find some information about him?</i>
+  <i>Creator? Who could be his creator? Where could I find some information about him? I guess I'll look around him to find some hints.</i>
   <form baer-key="quadriga-riddle">
       <input placeholder="Enter your answer...">
   </form>

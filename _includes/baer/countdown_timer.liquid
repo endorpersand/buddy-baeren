@@ -1,0 +1,47 @@
+<div class="d-flex flex-row justify-content-center">
+    <button type="button" class="btn btn-danger" id="startButton" onclick="countdownPuzzle()">
+        Start the Countdown
+    </button>
+
+</div>
+<div class="centerhorizontal">
+    <div id="timer">
+    <div id="display" style="font-size: 28px; font-weight: bold"></div>
+    </div>
+
+
+</div>
+
+
+<script>
+function countdownPuzzle() {
+    duration = 30;
+    var timer = duration, minutes, seconds;
+    var display = document.getElementById('display');
+    var startButton = document.getElementById('startButton');
+    
+    startButton.disabled = true; // Disable the button to prevent multiple intervals
+    
+    var interval = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        if (timer <=  duration * .25 && timer % 2 == 1) {
+            display.style.color = "red";
+        } else {
+            display.style.color="black";
+        }
+      
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            clearInterval(interval); // Clear the interval
+            timer = 0; // Ensure timer is set to 0
+            window.location.href = "{{ site.baseurl | prepend: site.url | append: 'fail.html' }}";
+        }
+    }, 1000);
+}
+</script>
