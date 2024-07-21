@@ -1,8 +1,7 @@
 const ANSWERS = {
     // baer-key: answer
-    "hotel-palace-puzzle": "orange",
-    "hotel-palace-leave": "answer",
-    "pablo-puzzle": "thanks",
+    "pablo-clock": pabloAnswer,
+    "quadriga-riddle": "todo",
 }
 
 console.log("enabling form script");
@@ -20,18 +19,25 @@ for (let el of document.querySelectorAll(`form[${BAER_KEY_ATTR}]`)) {
     }
     el.addEventListener("submit", e => {
         e.preventDefault();
-
         let input = el.querySelector("input");
         let tag = el.getAttribute(BAER_KEY_ATTR);
+
         if (input != null && tag != null) {
             let answer = ANSWERS[tag];
+            let userInput = input.value.toLowerCase();
+
             if (answer != null) {
-                if (input.value.toLowerCase() == answer) {
+                if (typeof answer === "string" && userInput == answer) {
+                    input.classList.add("baer-right");
+                    unlockTag(tag);
+                } else if (typeof answer === "function" && answer(userInput)) {
                     input.classList.add("baer-right");
                     unlockTag(tag);
                 } else {
                     input.classList.add("baer-wrong");
                 }
+            } else {
+                console.warn(`No answer found for key ${tag}`);
             }
         }
     })
@@ -58,4 +64,10 @@ function pressButton(key, index) {
             unlockTag(key, index);
         }
     }
+}
+
+function pabloAnswer(input) {
+    // TODO: handle pablo answer
+    console.log(`pablo answer ${input}!`);
+    return true;
 }

@@ -1318,12 +1318,47 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 input {
-  transition: background-color 0.2s;
   background-color: transparent;
+}
+form[baer-key] > input {
+  transition: background-color 0.2s;
 }
 .baer-wrong {
   background-color: red;
 }
 .baer-right {
   background-color: green;
+}
+
+// Dialogue boxes
+.baer-dialogue-box, .baer-dialogue-box-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.baer-dialogue-box {
+  flex-direction: row;
+}
+.baer-dialogue-box-right {
+  flex-direction: row-reverse;
+}
+// Dialogue text
+.baer-dialogue-text {
+  font-size: 1rem;
+  border:2px solid #865c3e4b;
+  border-radius: 10px;
+  padding: 5px;
+  overflow-wrap: anywhere;
+}
+// Groups of dialogue boxes
+.baer-dialogue-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+// Button array
+.baer-button-array {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
