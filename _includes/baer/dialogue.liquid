@@ -1,5 +1,17 @@
 {% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
-<div class="d-flex flex-row" style="gap: 10px">
+
+{% if include.right %}
+    {% assign dialogue-cls = "baer-dialogue-box-right" %}
+{% else %}
+    {% assign dialogue-cls = "baer-dialogue-box" %}
+{% endif %}
+{% if include.after %}
+    {% assign content_tag = 'baer-content="' | append: include.after | append: '"' %}
+{% else %}
+    {% assign content_tag = '' %}
+{% endif %}
+
+<div class={{ '"' | append: dialogue-cls | append: '"' }} {{content_tag}}>
     <figure
     {% if include.slot %}
         slot="{{ include.slot }}"
@@ -76,5 +88,5 @@
         <figcaption class="caption">{{ include.caption }}</figcaption>
     {% endif %}
     </figure>
-  <div>{{include.text}}</div>
+  <div class="baer-dialogue-text">{{include.text}}</div>
 </div>
