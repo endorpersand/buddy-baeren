@@ -7,79 +7,87 @@ category: three
 display_categories: [four]
 ---
 {% capture mg-1 %}
-    Did you know that here at Telekom, you can get 4 lines unlimited with international calling included for JUST €30/line?????
-    As the official partner of the UEFA Euro 2024, we're dedicated to keeping all the stadiums in top technical shape!
+  Did you know that here at Telekom, you can get 4 lines unlimited with international calling included for JUST €30/line?????
+  As the official partner of the UEFA Euro 2024, we're dedicated to keeping all the stadiums in top technical shape!
 {% endcapture %}
 {% capture mg-2 %}
-    Ugh, I hate my job…
+  Ugh, I hate my job…
 {% endcapture %}
 {% capture you-1c %}
-    Such great prices!;Kinda expensive, no?
+  Such great prices!;Kinda expensive, no?
 {% endcapture %}
 {% capture you-1 %}
-    <span baer-content="mg-dialogue-1" baer-option="0">Wow, those are such great prices!</span>
-    <span baer-content="mg-dialogue-1" baer-option="1">Isn't that a bit... expensive, though?</span>
+  <span baer-content="mg-dialogue-1" baer-option="0">Wow, those are such great prices!</span>
+  <span baer-content="mg-dialogue-1" baer-option="1">Isn't that a bit... expensive, though?</span>
 {% endcapture %}
 {% capture mg-3 %}
-    <span baer-content="mg-dialogue-1" baer-option="0">I know right? Y'know, some</span>
-    <span baer-content="mg-dialogue-1" baer-option="1">Hey, don't blame me! I don't get to choose the prices! Some</span>
-    customers just don't get it! Not too long ago,
-    there was this yellow bear that yelled at me after walking out the store with a new phone!
-    I can't believe the nerve of this bear country…
+  <span baer-content="mg-dialogue-1" baer-option="0">I know right? Y'know, some</span>
+  <span baer-content="mg-dialogue-1" baer-option="1">Hey, don't blame me! I don't get to choose the prices! Some</span>
+  customers just don't get it! Not too long ago,
+  there was this yellow bear that yelled at me after walking out the store with a new phone!
+  I can't believe the nerve of this bear country…
 {% endcapture %}
 {% capture you-2 %}
-    Yellow bear? Did you see where he went?
+  Yellow bear? Did you see where he went?
 {% endcapture %}
 {% capture mg-4 %}
-    I don't know and I don't care! Can you believe the nerve of this guy?
-    He had "I &#x2764;&#xfe0f; Ku'damm" written on him!
-    If you love Ku'damm, why don't you treat its bears with respect? Sheesh.
-    Anyway, why do you ask?
+  I don't know! He left on some sort of chariot before I could give him a piece of my mind.
+  Can you believe the nerve of this guy? He had "I &#x2764;&#xfe0f; Ku'damm" written on him!
+  If you love Ku'damm, why don't you treat its bears with respect? Sheesh.
+  Anyway, why do you ask?
 {% endcapture %}
 {% capture you-3 %}
-    I'm a detective investigating a case of a missing yellow bear. It seems like you have at least seen him?
+  I'm a detective investigating a case of a missing yellow bear. It seems like you have at least seen him?
 {% endcapture %}
 {% capture mg-5 %}
-    ..........................
+  ..........................
 {% endcapture %}
 {% capture you-4 %}
-    Uh, hello?
+  Uh, hello?
 {% endcapture %}
 {% capture mg-6 %}
-    Well, unfortunately, I don't have any other information, haha!
+  Well, unfortunately, I don't have any other information, haha!
 {% endcapture %}
 {% capture you-5 %}
-    Are you sure?
+  Are you sure?
 {% endcapture %}
 {% capture mg-7 %}
-    Positive!
+  Positive!
 {% endcapture %}
 {% capture you-6 %}
-    Any information would be great for the case!
+  Any information would be great for the case!
 {% endcapture %}
 {% capture mg-8 %}
-    Listen, I can't say too much on the job, my boss will hear.
-    <br>
-    <i>*scribbles*</i>
+  Listen, I can't say too much on the job, my boss will hear.
+  <br>
+  <i>*scribbles*</i>
 {% endcapture %}
 {% capture you-7c %}
-    What do you mean?;I can talk to them!
+  What do you mean?;I can talk to them!
 {% endcapture %}
 {% capture you-7 %}
-    <span baer-content="mg-dialogue-7" baer-option="0">What do you mean by that? Your boss will hear what?</span>
-    <span baer-content="mg-dialogue-7" baer-option="1">That's fine, I can ask your boss as well!</span>
+  <span baer-content="mg-dialogue-7" baer-option="0">What do you mean by that? Your boss will hear what?</span>
+  <span baer-content="mg-dialogue-7" baer-option="1">That's fine, I can ask your boss as well!</span>
 {% endcapture %}
 {% capture mg-9 %}
-    Here. Take this packet and go.
+  Here. Take this packet and go.
 {% endcapture %}
 {% capture you-8 %}
-    If you have any other information at all, that would be gre-
+  If you have any other information at all, that would be gre-
 {% endcapture %}
 {% capture mg-10 %}
-    DID YOU KNOW THAT HERE AT TELEKOM OFFERS PHISHING PROTECTION!
+  DID YOU KNOW THAT HERE AT TELEKOM WE OFFER PHISHING PROTECTION!
 {% endcapture %}
 
-<div class="baer-dialogue-group">
+<div class="d-flex flex-column align-items-center">
+  <!-- TODO: handle this text -->
+  <i>When you arrive, you observe Pablo's first designer (Künstler). Who is it?</i>
+  <form baer-key="magentinho-unlock">
+    <input placeholder="Enter your answer...">
+  </form>
+</div>
+
+<div class="baer-dialogue-group" baer-content="magentinho-unlock">
   {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-1 %}
   {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-2 %}
   {% include baer/button_array.liquid key="mg-dialogue-1" names=you-1c separator=";" %}

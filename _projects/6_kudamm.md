@@ -60,7 +60,15 @@ category: six
   Pablo has been looking for you for 16 hours! Nevermind that… there's no time to run back to him. Think. THINK! What would Pablo have made of the password…
 {% endcapture %}
 
-<div class="baer-dialogue-group">
+<div class="d-flex flex-column align-items-center">
+  <!-- TODO: handle this text -->
+  <i>When you arrive, you observe the number on the top-right corner of Lord Ku'damm's plaque. What is it?</i>
+  <form baer-key="kudamm-unlock">
+    <input placeholder="Enter your answer...">
+  </form>
+</div>
+
+<div class="baer-dialogue-group" baer-content="kudamm-unlock">
   {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
   {% include baer/dialogue.liquid path="assets/img/baer/kudamm.png" title="bear-1" text=kudamm-1 %}
   {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-2 right=true %}
@@ -81,4 +89,6 @@ category: six
   {% include baer/dialogue.liquid path="assets/img/baer/kudamm.png" title="bear-1" text=kudamm-9 %}
 </div>
 
-{% include baer/countdown_timer.liquid %}
+<div baer-content="kudamm-unlock">
+    {% include baer/countdown_timer.liquid %}
+</div>

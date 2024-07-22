@@ -1,7 +1,13 @@
 const ANSWERS = {
     // baer-key: answer
+    "pablo-unlock": "europa center",
+    "magentinho-unlock": "kira dicomy",
+    "quadriga-unlock": "kranzler eck",
+    "pirate-unlock": "go sylt",
+    "kudamm-unlock": "1384",
+    
     "pablo-clock": pabloAnswer,
-    "quadriga-riddle": "todo",
+    "quadriga-riddle": "blumen und wolken",
 }
 
 console.log("enabling form script");

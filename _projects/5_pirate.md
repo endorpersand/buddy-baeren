@@ -29,28 +29,39 @@ display_categories: [six]
   Maybe nothing. But if this revolution escalates, it could put everyone in danger, including you. Lord Ku'damm might be going too far. Do you really want to be part of something that could lead to chaos?
 {% endcapture %}
 {% capture pirate-4 %}
-  (pauses, looking thoughtful) Arr, ye be right. The lad's got a fiery spirit, but sometimes the fire burns too hot. He's been actin' strange ever since he got that shiny new iPhone. Talkin' about overthrowin' the system and bringin' down the fat cats of Ku'damm.
+  Chaos, ye say? Arr, chaos be the heart of revolution, and revolutions bring true change. Ye think I fear a bit of turmoil?
 {% endcapture %}
 {% capture you-5 %}
-  Do you know where he is now?
+  I'm not saying you fear it, but there's a difference between necessary change and reckless destruction. Innocent lives could be at stake.
 {% endcapture %}
 {% capture pirate-5 %}
-  (sighs) Aye, last I saw him, he was headin' towards the Gucci Store. Said somethin' about makin' his first move there. I tried to talk sense into him, but his mind's set on this revolution.
+  And what makes ye think ye understand the stakes better than us? Lord Ku'damm knows what he's doin'.
 {% endcapture %}
 {% capture you-6 %}
-  Thank you, Pirate Bear. I need to find him before it's too late.
+  I've seen unchecked revolutions lead to anarchy and suffering. I'm here to ensure your movement doesn't destroy itself.
 {% endcapture %}
 {% capture pirate-6 %}
-  (sternly) Listen, matey. If ye be goin' after Lord Ku'damm, ye better watch yer back. But if ye can, talk him down. Remind him what Ku'damm used to be before all the glitter and gold. There's still a chance to steer this ship back on course.
+  Ye've got nerve, but ye'll find no traitor in Pirate Bear. Loyalty to Lord Ku'damm is unshakable.
 {% endcapture %}
 {% capture you-7 %}
-  I'll do my best. Thank you, Pirate Bear.
+  Even if it means the dream you're fighting for is consumed by chaos?
 {% endcapture %}
 {% capture pirate-7 %}
-  (nods) Fair winds and following seas, detective. Ye might need it.
+  A revolution ain't no garden party, detective. We be willin' to take risks for somethin' greater. If ye want to understand him, ask why ye fear change.
+{% endcapture %}
+{% capture you-8 %}
+  It's not fear of change, Pirate Bear. It's fear of losing sight of the goal. If you won't help me find Lord Ku'damm, I'll find him myself!
 {% endcapture %}
 
-<div class="baer-dialogue-group">
+<div class="d-flex flex-column align-items-center">
+  <!-- TODO: handle this text -->
+  <i>When you arrive, you observe the name of the restaurant this bear stands by. What is it?</i>
+  <form baer-key="pirate-unlock">
+    <input placeholder="Enter your answer...">
+  </form>
+</div>
+
+<div class="baer-dialogue-group" baer-content="pirate-unlock">
   {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
   {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-1 %}
   {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-2 right=true %}
@@ -65,6 +76,7 @@ display_categories: [six]
   {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-6 %}
   {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-7 right=true %}
   {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-7 %}
+  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-8 right=true %}
 </div>
 
-{% include baer/next.liquid %}
+{% include baer/next.liquid baer-content="pirate-unlock" %}

@@ -32,7 +32,15 @@ display_categories: [five]
 {% endcapture %}
 <!-- TODO: resolve what we're having them find -->
 {% capture quad-4 %}
-  We do not speak with those we don't trust. Prove to us that you are worthy. Answer me this: what is my creator's…?
+  We do not speak with those we don't trust. Prove to us that you are worthy. Answer me this riddle:
+  <div style="margin-left: 25px">
+  Amidst the lavish halls where travelers rest,<br>
+  In a grand Berlin haven where guests are the best,<br>
+  My creator's art is displayed with pride,<br>
+  Its title a secret you must now decide.<br>
+  Glimpse through the gallery, let curiosity steer,<br>
+  What name holds the artwork my maker holds dear?
+  </div>
 {% endcapture %}
 
 {% capture quad-5 %}
@@ -73,28 +81,38 @@ display_categories: [five]
   Like I told you before, he was planning on meeting with his accomplice pirate bear to go over the final plan, but that was a while ago. You better hurry!
 {% endcapture %}
 
-<div class="baer-dialogue-group">
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-1 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-2 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-2 %}
-</div>
-
-<div class="d-flex flex-row justify-content-sm-center">
-  <i>Dang, these bears are the real deal.</i>
-</div>
-
-<div class="baer-dialogue-group">
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-3 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-3 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-4 %}
-</div>
-
-<div class="d-flex flex-column align-items-center" style="gap: 5px">
-  <i>Creator? Who could be his creator? Where could I find some information about him? I guess I'll look around him to find some hints.</i>
-  <form baer-key="quadriga-riddle">
-      <input placeholder="Enter your answer...">
+<div class="d-flex flex-column align-items-center">
+  <!-- TODO: handle this text -->
+  <i>You observe the grand name written in front of the four bears. What is it?</i>
+  <form baer-key="quadriga-unlock">
+    <input placeholder="Enter your answer...">
   </form>
+</div>
+
+<div baer-content="quadriga-unlock">
+  <div class="baer-dialogue-group">
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-1 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-2 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-2 %}
+  </div>
+
+  <div class="d-flex flex-row justify-content-sm-center">
+    <i>Dang, these bears are the real deal.</i>
+  </div>
+
+  <div class="baer-dialogue-group">
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-3 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-3 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-4 %}
+  </div>
+
+  <div class="d-flex flex-column align-items-center" style="gap: 5px">
+    <i>Creator? Who could be his creator? Where could I find some information about him? I guess I'll look around him to find some hints.</i>
+    <form baer-key="quadriga-riddle">
+        <input placeholder="Enter your answer...">
+    </form>
+  </div>
 </div>
 
 <div class="baer-dialogue-group" baer-content="quadriga-riddle">
