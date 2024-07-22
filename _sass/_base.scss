@@ -1362,3 +1362,21 @@ form[baer-key] > input {
   flex-direction: row;
   justify-content: center;
 }
+
+#timer-display {
+  transition: color 0.5s;
+  font-size: 28px;
+  font-weight: bold;
+}
+.baer-timer-final {
+  animation: 0.5s infinite alternate color-switch;
+}
+@keyframes color-switch {
+  0% {
+    color: black;
+  }
+
+  100% {
+    color: red;
+  }
+}

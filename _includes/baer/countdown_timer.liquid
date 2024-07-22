@@ -6,42 +6,42 @@
 </div>
 <div class="centerhorizontal">
     <div id="timer">
-    <div id="display" style="font-size: 28px; font-weight: bold"></div>
+        <div id="timer-display"></div>
     </div>
-
-
 </div>
 
 
 <script>
+function timeString(timer) {
+    let minutes = Math.floor(timer / 60);
+    let seconds = timer % 60;
+
+    let minStr = String(minutes).padStart(2, "0");
+    let secStr = String(seconds).padStart(2, "0");
+    return minStr + ":" + secStr;
+}
 function countdownPuzzle() {
-    duration = 30;
+    const duration = 30;
     var timer = duration, minutes, seconds;
-    var display = document.getElementById('display');
+    var display = document.getElementById('timer-display');
     var startButton = document.getElementById('startButton');
     
     startButton.disabled = true; // Disable the button to prevent multiple intervals
     
+    display.textContent = timeString(duration);
     var interval = setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        if (timer <=  duration * .25 && timer % 2 == 1) {
-            display.style.color = "red";
-        } else {
-            display.style.color="black";
+        if (timer <= duration * .25) {
+            display.classList.add("baer-timer-final");
         }
       
-        display.textContent = minutes + ":" + seconds;
-
         if (--timer < 0) {
             clearInterval(interval); // Clear the interval
             timer = 0; // Ensure timer is set to 0
             window.location.href = "{{ site.baseurl | prepend: site.url | append: 'fail.html' }}";
+            return;
         }
+
+        display.textContent = timeString(timer);
     }, 1000);
 }
 </script>
