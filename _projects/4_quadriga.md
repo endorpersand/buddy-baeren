@@ -97,7 +97,6 @@ display_categories: [five]
   </form>
 </div>
 
-
 <div class="baer-dialogue-group" baer-content="quadriga-riddle">
   {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-5 %}
   {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-4 right=true %}
