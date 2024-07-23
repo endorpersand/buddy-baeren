@@ -84,7 +84,7 @@ function pressButton(key, index) {
 }
 
 function pabloAnswer(input) {
-    if (!/^\d{1,2}:\d{2}$/.test(input)) return false;
+    if (!RegExp(String.raw`^\d{1,2}:\d{2}$`).test(input)) return false;
 
     let now = new Date();
     let nowTs = now.getHours() * 60 + now.getMinutes();
