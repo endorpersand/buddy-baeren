@@ -1,9 +1,9 @@
 const ANSWERS = {
     // baer-key: answer
-    "pablo-unlock": ["europa center", "europa-center"],
+    "pablo-unlock": "europa center",
     "magentinho-unlock": "kira dicomy",
     "quadriga-unlock": "kranzler eck",
-    "pirate-unlock": ["go sylt", "go-sylt", "let's go sylt", "lets go sylt"],
+    "pirate-unlock": "go sylt",
     "kudamm-unlock": "1384",
     
     "pablo-clock": pabloAnswer,
@@ -33,7 +33,10 @@ for (let el of document.querySelectorAll(`form[${BAER_KEY_ATTR}]`)) {
             let userInput = input.value.toLowerCase();
 
             if (answer != null) {
-                if (validateAnswer(answer, userInput)) {
+                if (typeof answer === "string" && userInput == answer) {
+                    input.classList.add("baer-right");
+                    unlockTag(tag);
+                } else if (typeof answer === "function" && answer(userInput)) {
                     input.classList.add("baer-right");
                     unlockTag(tag);
                 } else {
@@ -46,20 +49,6 @@ for (let el of document.querySelectorAll(`form[${BAER_KEY_ATTR}]`)) {
     })
 }
 
-function validateAnswer(answer, userInput) {
-    if (typeof answer === "string") {
-        return answer.toLowerCase() === userInput.toLowerCase();
-    }
-    if (answer instanceof Array) {
-        return answer.some(e => validateAnswer(e, userInput));
-    }
-    if (typeof answer === "function") {
-        return answer(userInput);
-    }
-
-    console.warn(`Answer is of incorrect format`);
-    return false;
-}
 // Button array mode: Press one button in array of buttons
 function pressButton(key, index) {
     let form = document.querySelector(`form[${BAER_KEY_ATTR}=${key}]`);
@@ -84,14 +73,7 @@ function pressButton(key, index) {
 }
 
 function pabloAnswer(input) {
-    if (!/^\d{1,2}:\d{2}$/.test(input)) return false;
-
-    let now = new Date();
-    let nowTs = now.getHours() * 60 + now.getMinutes();
-
-    let [inputHr, inputMin] = input.split(":").map(s => parseInt(s));
-    let inputTs = inputHr * 60 + inputMin;
-    
-    let modDiff = ((inputTs - nowTs) % 5 + 5) % 5;
-    return modDiff === 1 || modDiff === 2;
+    // TODO: handle pablo answer
+    console.log(`pablo answer ${input}!`);
+    return true;
 }
