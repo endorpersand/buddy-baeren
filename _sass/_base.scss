@@ -1384,3 +1384,7 @@ form[baer-key] > input {
 .gap-5 {
   gap: 5px;
 }
+
+[baer-content]:not([baer-invert]):not(.baer-unhidden), [baer-content][baer-invert].baer-unhidden {
+  display: none;
+}

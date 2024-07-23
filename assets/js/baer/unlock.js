@@ -22,11 +22,6 @@ const BAER_CONTENT_ATTR = "baer-content";
  */
 const BAER_OPTION_ATTR = "baer-option";
 
-/**
- * Class that hides stuff.
- */
-const HIDDEN = "d-none";
-
 var unlocked = new Map();
 
 console.log("enabling unlock script");
@@ -82,9 +77,9 @@ function updateLocks() {
         }
 
         if (hidden) {
-            el.classList.add(HIDDEN);
+            el.classList.remove("baer-unhidden");
         } else {
-            el.classList.remove(HIDDEN);
+            el.classList.add("baer-unhidden");
         }
 
         // Handling buttons:
