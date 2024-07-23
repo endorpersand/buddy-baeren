@@ -89,8 +89,10 @@ function pabloAnswer(input) {
     let now = new Date();
     let nowTs = now.getHours() * 60 + now.getMinutes();
 
-    let [inputHr, inputMin] = input.split(":").map(s => parseInt(s));
-    let inputTs = inputHr * 60 + inputMin;
+    // can't use destructuring with uglifier
+    // https://github.com/lautis/uglifier/issues/175
+    let inputSplit = input.split(":").map(s => parseInt(s));
+    let inputTs = inputSplit[0] * 60 + inputSplit[1];
     
     let modDiff = ((inputTs - nowTs) % 5 + 5) % 5;
     return modDiff === 1 || modDiff === 2;
