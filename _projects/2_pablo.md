@@ -70,6 +70,16 @@ display_categories: [three]
     <form baer-key="pablo-clock">
       <input placeholder="(Answer in 24-hour time)">
     </form>
+
+    <i>
+      Note: the clock is prone to breaking. <br>
+      If you cannot figure out the answer, <br>
+      we have provided a fallback <a href="#" onclick="pabloFallback()">here</a>.
+    </i>
+
+    <div id="pablo-fallback" class="d-none">
+      <img src="{{"assets/img/baer/fallback-clock.png" | relative_url }}" width=300>
+    </div>
   </div>
 </div>
 

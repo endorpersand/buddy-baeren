@@ -84,7 +84,15 @@ function pressButton(key, index) {
 }
 
 function pabloAnswer(input) {
-    if (!/^\d{1,2}:\d{2}$/.test(input)) return false;
+    // assert answer is of form XX:XX
+    if (!/^\d{1,2}:\d{2}$/.test(input)) {
+        return false;
+    }
+
+    // If fallback was enabled, answer is known.
+    if (!document.querySelector("#pablo-fallback")?.classList.contains(HIDDEN)) {
+        return input == "11:13";
+    }
 
     let now = new Date();
     let nowTs = now.getHours() * 60 + now.getMinutes();
@@ -96,4 +104,7 @@ function pabloAnswer(input) {
     
     let modDiff = ((inputTs - nowTs) % 5 + 5) % 5;
     return modDiff === 1 || modDiff === 2;
+}
+function pabloFallback() {
+    document.querySelector("#pablo-fallback")?.classList.remove(HIDDEN);
 }
