@@ -30,7 +30,6 @@ display_categories: [five]
 {% capture quad-3 %}
   <b>ROOOOOOOOOOOOOOAAAAAAAAAAAAAAAAAAAAAAAAAAAARRRR!</b>
 {% endcapture %}
-<!-- TODO: resolve what we're having them find -->
 {% capture quad-4 %}
   We do not speak with those we don't trust. Prove to us that you are worthy. Answer me this riddle:
   <div style="margin-left: 25px">
@@ -81,7 +80,7 @@ display_categories: [five]
   Like I told you before, he was planning on meeting with his accomplice pirate bear to go over the final plan, but that was a while ago. You better hurry!
 {% endcapture %}
 
-<div class="d-flex flex-column align-items-center">
+<div class="d-flex flex-column align-items-center gap-5">
   <!-- TODO: handle this text -->
   <i>You observe the grand name written in front of the four bears. What is it?</i>
   <form baer-key="quadriga-unlock">
@@ -107,7 +106,7 @@ display_categories: [five]
     {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-4 %}
   </div>
 
-  <div class="d-flex flex-column align-items-center" style="gap: 5px">
+  <div class="d-flex flex-column align-items-center gap-5">
     <i>Creator? Who could be his creator? Where could I find some information about him? I guess I'll look around him to find some hints.</i>
     <form baer-key="quadriga-riddle">
         <input placeholder="Enter your answer...">

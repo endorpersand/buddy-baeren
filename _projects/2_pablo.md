@@ -24,8 +24,7 @@ display_categories: [three]
 
 <!-- Dialogue pt. 2 -->
 {% capture pablo-3 %}
-  <!-- TODO: add time here -->
-  oh jeez... it's X:XX? he's been gone for like 17 hours! i wonder where he's at D:
+  really?? oh jeez... he's been gone for like 17 hours then! i wonder where he's at D:
 {% endcapture %}
 {% capture you-2 %}
   What's he look like?
@@ -49,7 +48,7 @@ display_categories: [three]
   OK. I hear there’s a Deutsche Telekom nearby, so I’ll check if they have seen them.
 {% endcapture %}
 
-<div class="d-flex flex-column align-items-center">
+<div class="d-flex flex-column align-items-center gap-5">
   <!-- TODO: handle this text -->
   <i>When you arrive, you observe Pablo's sponsor. What is it?</i>
   <form baer-key="pablo-unlock">
@@ -66,7 +65,7 @@ display_categories: [three]
 
   <!-- TODO: add fallback clock here -->
 
-  <div class="d-flex flex-column align-items-center" style="gap: 5px">
+  <div class="d-flex flex-column align-items-center gap-5">
     <i>You feel like you have seen a clock like this before. But, then, what time is it?</i>
     <form baer-key="pablo-clock">
       <input placeholder="(Answer in 24-hour time)">

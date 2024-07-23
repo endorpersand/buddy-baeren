@@ -79,7 +79,7 @@ display_categories: [four]
   DID YOU KNOW THAT HERE AT TELEKOM WE OFFER PHISHING PROTECTION!
 {% endcapture %}
 
-<div class="d-flex flex-column align-items-center">
+<div class="d-flex flex-column align-items-center gap-5">
   <!-- TODO: handle this text -->
   <i>When you arrive, you observe Pablo's first designer (Künstler). Who is it?</i>
   <form baer-key="magentinho-unlock">

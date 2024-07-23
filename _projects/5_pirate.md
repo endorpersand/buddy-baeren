@@ -53,7 +53,7 @@ display_categories: [six]
   It's not fear of change, Pirate Bear. It's fear of losing sight of the goal. If you won't help me find Lord Ku'damm, I'll find him myself!
 {% endcapture %}
 
-<div class="d-flex flex-column align-items-center">
+<div class="d-flex flex-column align-items-center gap-5">
   <!-- TODO: handle this text -->
   <i>When you arrive, you observe the name of the restaurant this bear stands by. What is it?</i>
   <form baer-key="pirate-unlock">
