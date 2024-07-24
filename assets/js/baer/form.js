@@ -90,7 +90,7 @@ function pabloAnswer(input) {
     }
 
     // If fallback was enabled, answer is known.
-    if (!document.querySelector("#pablo-fallback")?.classList.contains("d-none")) {
+    if (!document.querySelector("#pablo-fallback").classList.contains("d-none")) {
         return input == "11:13";
     }
 
@@ -106,5 +106,5 @@ function pabloAnswer(input) {
     return modDiff === 1 || modDiff === 2;
 }
 function pabloFallback() {
-    document.querySelector("#pablo-fallback")?.classList.remove("d-none");
+    document.querySelector("#pablo-fallback").classList.remove("d-none");
 }
