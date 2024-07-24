@@ -73,7 +73,7 @@ display_categories: [five]
   Where can I find him?
 {% endcapture %}
 {% capture quad-10 %}
-  Like I told you before, he was planning on meeting with his accomplice pirate bear to go over the final plan, but that was a while ago. You better hurry!
+  Like I told you before, he was planning on meeting with his accomplice pirate bear by the <b>restaurant down the road</b> to go over the final plan, but that was a while ago. You better hurry!
 {% endcapture %}
 
 <div class="baer-dialogue-group">

@@ -19,21 +19,15 @@ With your newfound wealth, you decide to splurge at Ku’damm, a high end shoppi
 After staying at a nearby hotel, you notice something amiss about the bears standing outside… 
 <br>
 <br>
+
+
+<h2 style="color:red">IMPORTANT!</h2>
 <div style="color: red">
-<b>IMPORTANT! You are allowed to search things up on google and use maps to find directions to specific locations</b>
+You are allowed to search up websites on google and use google maps to find directions to specific stores.
+<br>
+However, you may not google the locations of specific bears!
 </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
