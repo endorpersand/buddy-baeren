@@ -79,7 +79,7 @@ display_categories: [three]
       <div id="pablo-fallback" class="d-none">
         <img src="{{"assets/img/baer/fallback-clock.png" | relative_url }}" width=300>
       </div>
-    </div>
+    </div>    
   </div>
 
   <div class="baer-dialogue-group" baer-content="pablo-clock">
