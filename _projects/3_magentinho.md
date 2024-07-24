@@ -24,7 +24,7 @@ display_categories: [four]
   <span baer-content="mg-dialogue-1" baer-option="0">I know right? Y'know, some</span>
   <span baer-content="mg-dialogue-1" baer-option="1">Hey, don't blame me! I don't get to choose the prices! Some</span>
   customers just don't get it! Not too long ago,
-  there was this yellow bear that yelled at me after walking out the store with a new phone!
+  there was this yellow bear that yelled at me after walking out of the store with a new phone!
   I can't believe the nerve of this bear country…
 {% endcapture %}
 {% capture you-2 %}
@@ -81,8 +81,7 @@ display_categories: [four]
 
 <div class="baer-dialogue-group">
   <div class="d-flex flex-column align-items-center gap-5">
-    <!-- TODO: handle this text -->
-    <i>Oh! Another bear in front of the store! I wonder who his sponsor is.</i>
+    <i>You don't see Pablo, but you see another bear in front of the store! I wonder who his artist (Künstler) is.</i>
     <form baer-key="magentinho-unlock">
       <input placeholder="Enter your answer...">
     </form>
@@ -117,8 +116,13 @@ display_categories: [four]
     {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-10 %}
   </div>
 
-  <div>
-    <i baer-content="mg-dialogue-7">You suspect you will not be able to get more out of him. Maybe it's time to look at the <b>Deutsche Telekom</b> packet that he gave you.</i>
+  <div baer-content="mg-dialogue-7">
+    <i>You suspect you will not be able to get more out of him. It's time to look at the <b>Deutsche Telekom</b> packet that he gave you. Maybe, it will tell you where to go next.</i>
+  </div>
+
+  <div class="centerhorizontal" baer-content="mg-dialogue-7">
+    <h3>New Task: Decrypt Magentinho's message!</h3>
+    <div>You may move on upon reaching the next location.</div>
   </div>
 </div>
 

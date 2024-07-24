@@ -37,8 +37,7 @@ horizontal: false
 
 
 <div class="d-flex flex-column align-items-center gap-5 centerhorizontal ">
-  <!-- TODO: handle this text -->
-  <i>You come walk outside <b>Hotel Palace Berlin</b> and see a sitting bear. What color is he?</i>
+  <i>Outside <b>Hotel Palace Berlin</b>, you see a sitting bear. You think, dang. He's such a majestic shade of...</i>
     <form baer-key="hotel-palace-unlock"> <input placeholder="Enter your answer..."></form>
     
 </div>
