@@ -45,27 +45,25 @@ display_categories: [three]
   man….. just help me find my friend…… &#x1f61e;
 {% endcapture %}
 {% capture you-4 %}
-  OK. I hear there’s a Deutsche Telekom nearby, so I’ll check if they have seen them.
+  OK. I hear there’s a Deutsche Telekom nearby. I’ll check there for you!
 {% endcapture %}
 
-<div class="d-flex flex-column align-items-center gap-5">
-  <!-- TODO: handle this text -->
-  <i>When you arrive, you observe Pablo's sponsor. What is it?</i>
-  <form baer-key="pablo-unlock">
-    <input placeholder="Enter your answer...">
-  </form>
-</div>
-
-<div baer-content="pablo-unlock">
-  <div class="baer-dialogue-group">
-  {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-1 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-2 %}
+<div class="baer-dialogue-group">
+  <div class="d-flex flex-column align-items-center gap-5">
+    <!-- TODO: handle this text -->
+    <i>When you arrive, you observe Pablo's sponsor. What is it?</i>
+    <form baer-key="pablo-unlock">
+      <input placeholder="Enter your answer...">
+    </form>
   </div>
 
-  <!-- TODO: add fallback clock here -->
+  <div class="baer-dialogue-group" baer-content="pablo-unlock">
+    {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-1 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-2 %}
+  </div>
 
-  <div class="d-flex flex-column align-items-center gap-5">
+  <div class="d-flex flex-column align-items-center gap-5" baer-content="pablo-unlock">
     <i>You feel like you have seen a clock like this before. But, then, what time is it?</i>
     <form baer-key="pablo-clock">
       <input placeholder="(Answer in 24-hour time)">
@@ -83,16 +81,16 @@ display_categories: [three]
       </div>
     </div>
   </div>
-</div>
 
-<div class="baer-dialogue-group" baer-content="pablo-clock">
-  {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-3 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-2 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-4 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-3 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-5 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-6 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-4 right=true %}
+  <div class="baer-dialogue-group" baer-content="pablo-clock">
+    {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-3 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-2 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-4 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-3 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-5 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-6 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-4 right=true %}
+  </div>
 </div>
 
 {% include baer/next.liquid baer-content="pablo-clock" %}

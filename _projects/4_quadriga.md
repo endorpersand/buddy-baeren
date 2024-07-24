@@ -7,10 +7,6 @@ category: four
 display_categories: [five]
 ---
 
-<i>After heading down and turning right at the sunglasses store, you start to feel a powerful presence.</i>
-<br>
-<i>5 stoic bears are there, all of which are gold, but none of them match the "I &#x2764;&#xfe0f; Ku'damm" profile that Magentinho mentioned.</i>
-
 {% capture you-1 %}
   I'm looking for a missing bear, and my investigation has led me here.
 {% endcapture %}
@@ -25,13 +21,13 @@ display_categories: [five]
 {% endcapture %}
 
 {% capture you-3 %}
-  <b>HEY! I said i'm looking for—</b>
+  <b style="font-size: 1.1rem">HEY! I said i'm looking for—</b>
 {% endcapture %}
 {% capture quad-3 %}
-  <b>ROOOOOOOOOOOOOOAAAAAAAAAAAAAAAAAAAAAAAAAAAARRRR!</b>
+  <b style="font-size: 2rem">ROOOOOOOOOOOOOOAAAAAAAAAAAAAAAAAAAAAAAAAAAARRRR!</b>
 {% endcapture %}
 {% capture quad-4 %}
-  We do not speak with those we don't trust. Prove to us that you are worthy. Answer me this riddle:
+  We do not speak with those we don't trust. Prove to us that you are worthy. Answer us this riddle:
   <div style="margin-left: 25px">
   Amidst the lavish halls where travelers rest,<br>
   In a grand Berlin haven where guests are the best,<br>
@@ -80,50 +76,54 @@ display_categories: [five]
   Like I told you before, he was planning on meeting with his accomplice pirate bear to go over the final plan, but that was a while ago. You better hurry!
 {% endcapture %}
 
-<div class="d-flex flex-column align-items-center gap-5">
-  <!-- TODO: handle this text -->
-  <i>You observe the grand name written in front of the four bears. What is it?</i>
-  <form baer-key="quadriga-unlock">
-    <input placeholder="Enter your answer...">
-  </form>
-</div>
+<div class="baer-dialogue-group">
+  <div class="d-flex flex-column align-items-center gap-5">
+    <!-- TODO: handle this text -->
+    <i>You observe the grand name written front and center. What is it?</i>
+    <form baer-key="quadriga-unlock">
+      <input placeholder="Enter your answer...">
+    </form>
+  </div>
 
-<div baer-content="quadriga-unlock">
-  <div class="baer-dialogue-group">
+  <div class="baer-dialogue-group" baer-content="quadriga-unlock">
+    <div class="d-flex flex-column align-center gap-5">
+      <i>After heading down and through the alley near Arket, you start to feel a powerful presence.</i>
+      <i>5 stoic bears are there, all of which are gold, yet none of them match the "I &#x2764;&#xfe0f; Ku'damm" profile that Magentinho mentioned.</i>
+    </div>
+  
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-1 %}
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-2 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-2 %}
-  </div>
+    
+    <div class="d-flex flex-row justify-content-center">
+      <i>Dang, these bears are the real deal.</i>
+    </div>
 
-  <div class="d-flex flex-row justify-content-sm-center">
-    <i>Dang, these bears are the real deal.</i>
-  </div>
-
-  <div class="baer-dialogue-group">
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-3 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-3 %}
     {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-4 %}
   </div>
 
-  <div class="d-flex flex-column align-items-center gap-5">
+  <div class="d-flex flex-column align-items-center gap-5" baer-content="quadriga-unlock">
     <i>Creator? Who could be his creator? Where could I find some information about him? I guess I'll look around him to find some hints.</i>
     <form baer-key="quadriga-riddle">
         <input placeholder="Enter your answer...">
     </form>
   </div>
-</div>
 
-<div class="baer-dialogue-group" baer-content="quadriga-riddle">
-  {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-5 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-4 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-6 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-5 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-7 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-6 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-8 %}
-  {% include baer/button_array.liquid key="quad-dialogue-7" names=you-7c separator=";" %}
-  <div baer-content="quad-dialogue-7">
+  <div class="baer-dialogue-group" baer-content="quadriga-riddle">
+    {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-5 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-4 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-6 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-5 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-7 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-6 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-8 %}
+    {% include baer/button_array.liquid key="quad-dialogue-7" names=you-7c separator=";" %}
+  </div>
+
+  <div class="baer-dialogue-group" baer-content="quad-dialogue-7">
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-7 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-9 %}
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-8 right=true %}
