@@ -14,10 +14,10 @@ display_categories: [six]
   Aye, that be me. And who might ye be, wanderin' into me haven uninvited?
 {% endcapture %}
 {% capture you-2 %}
-  I'm a detective. I've been looking for your friend, Lord Kudamm. Quadriga told me you might know where he is.
+  I'm a detective. I've been looking for your friend, <b>Lord Ku'damm</b>. I was told you might know where he is.
 {% endcapture %}
 {% capture pirate-2 %}
-  (quizzically tilts his head) Arr, so ye be the one pokin' around Ku'damm. What business do ye have with Lord Ku'damm?
+  (quizzically tilts his head) Arr, so ye be the one pokin' around Ku'damm. What business do ye have with <b>Lord Ku'damm</b>?
 {% endcapture %}
 {% capture you-3 %}
   I need to understand what he's planning. The whispers of a revolution have been growing louder, and I believe it's about to reach a tipping point.
@@ -26,7 +26,7 @@ display_categories: [six]
   (smirking) Aye, the winds of change be blowin'. But what makes ye think I'd betray me friend's trust? What's in it for old Pirate Bear?
 {% endcapture %}
 {% capture you-4 %}
-  Maybe nothing. But if this revolution escalates, it could put everyone in danger, including you. Lord Ku'damm might be going too far. Do you really want to be part of something that could lead to chaos?
+  Maybe nothing. But if this revolution escalates, it could put everyone in danger, including you. <b>Lord Ku'damm</b> might be going too far. Do you really want to be part of something that could lead to chaos?
 {% endcapture %}
 {% capture pirate-4 %}
   Chaos, ye say? Arr, chaos be the heart of revolution, and revolutions bring true change. Ye think I fear a bit of turmoil?
@@ -35,13 +35,13 @@ display_categories: [six]
   I'm not saying you fear it, but there's a difference between necessary change and reckless destruction. Innocent lives could be at stake.
 {% endcapture %}
 {% capture pirate-5 %}
-  And what makes ye think ye understand the stakes better than us? Lord Ku'damm knows what he's doin'.
+  And what makes ye think ye understand the stakes better than us? <b>Lord Ku'damm</b> knows what he's doin'.
 {% endcapture %}
 {% capture you-6 %}
   I've seen unchecked revolutions lead to anarchy and suffering. I'm here to ensure your movement doesn't destroy itself.
 {% endcapture %}
 {% capture pirate-6 %}
-  Ye've got nerve, but ye'll find no traitor in Pirate Bear. Loyalty to Lord Ku'damm is unshakable.
+  Ye've got nerve, but ye'll find no traitor in Pirate Bear. Loyalty to <b>Lord Ku'damm</b> is unshakable.
 {% endcapture %}
 {% capture you-7 %}
   Even if it means the dream you're fighting for is consumed by chaos?
@@ -56,7 +56,7 @@ display_categories: [six]
 <div class="baer-dialogue-group">
   <div class="d-flex flex-column align-items-center gap-5">
     <!-- TODO: handle this text -->
-    <i>When you arrive, you observe the name of the restaurant this bear stands by. What is it?</i>
+    <i>You're finally here, ready to confront <b>Pirate Bear</b>. As you arrive, you observe the name of the restaurant Pirate stands by...</i>
     <form baer-key="pirate-unlock">
       <input placeholder="Enter your answer...">
     </form>
@@ -78,6 +78,10 @@ display_categories: [six]
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-7 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-7 %}
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-8 right=true %}
+  </div>
+  <div class="centerhorizontal">
+    <i>Pirate Bear clearly won't help you here.</i>
+    <i>Maybe there's something in Pablo's book that tells you where he is? Maybe the small things you've observed so far can help you?</i>
   </div>
 </div>
 
