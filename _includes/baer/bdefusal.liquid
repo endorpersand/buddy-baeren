@@ -1,0 +1,56 @@
+
+<div id="bdefusal-wrapper">
+    <img src="{{ "assets/img/baer/bdfs.png" | relative_url }}" style="width: 100%">
+    <div id="bdefusal-timer">
+        <div id="timer-display">07:30</div>
+    </div>
+    <div id="bdefusal-input">
+        <form baer-key="bdefusal">
+            <input size="25" placeholder="MISSING DEFUSAL CODE">
+        </form>
+    </div>
+</div>
+
+<script>
+    function timeString(timer) {
+        let minutes = Math.floor(timer / 60);
+        let seconds = timer % 60;
+
+        let minStr = String(minutes).padStart(2, "0");
+        let secStr = String(seconds).padStart(2, "0");
+        return minStr + ":" + secStr;
+    }
+    function countdownPuzzle() {
+        const duration = 450;
+        var timer = duration, minutes, seconds;
+        var display = document.getElementById('timer-display');
+                
+        display.textContent = timeString(duration);
+        var interval = setInterval(function () {
+            if (timer <= duration * .25) {
+                display.classList.add("baer-timer-final");
+            }
+        
+            if (isTagUnlocked("bdefusal")) {
+                window.location.href = "{{ site.baseurl | prepend: site.url | append: 'win.html' }}";
+            }
+
+            if (--timer < 0) {
+                clearInterval(interval); // Clear the interval
+                timer = 0; // Ensure timer is set to 0
+                window.location.href = "{{ site.baseurl | prepend: site.url | append: 'fail.html' }}";
+                return;
+            }
+
+            display.textContent = timeString(timer);
+        }, 1000);
+    }
+
+    window.onscroll = function(ev) {
+    console.log("scroll!", (window.innerHeight + window.pageYOffset), document.body.offsetHeight);
+    if (Math.ceil(window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        window.onscroll = null;
+        countdownPuzzle();
+    }
+};
+</script>

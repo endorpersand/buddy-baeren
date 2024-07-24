@@ -8,6 +8,7 @@ const ANSWERS = {
     
     "pablo-clock": pabloAnswer,
     "quadriga-riddle": "blumen und wolken",
+    "bdefusal": "delta"
 }
 
 console.log("enabling form script");

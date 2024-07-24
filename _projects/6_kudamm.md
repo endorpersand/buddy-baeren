@@ -92,5 +92,5 @@ category: six
 </div>
 
 <div baer-content="kudamm-unlock">
-    {% include baer/countdown_timer.liquid %}
+    {% include baer/bdefusal.liquid %}
 </div>
