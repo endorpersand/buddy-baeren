@@ -73,7 +73,7 @@ display_categories: [five]
   Where can I find him?
 {% endcapture %}
 {% capture quad-10 %}
-  Like I told you before, he was planning on meeting with his accomplice pirate bear to go over the final plan, but that was a while ago. You better hurry!
+  Like I told you before, he was planning on meeting with his accomplice pirate bear by the <b>restaurant down the road</b> to go over the final plan, but that was a while ago. You better hurry!
 {% endcapture %}
 
 <div class="baer-dialogue-group">
@@ -128,6 +128,10 @@ display_categories: [five]
     {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-9 %}
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-8 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-10 %}
+
+    <div class = "centerhorizontal">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=10K2ey0skiIeybq425PCJ33v26jQQuRA&ehbc=2E312F" width="640" height="480"></iframe>
+    </div>
   </div>
 </div>
 

@@ -9,20 +9,25 @@ display_categories: [start, reset]
 horizontal: false
 ---
 
+<div class="baer-dialogue-group centerhorizontal">
+You are a world famous detective who has just gotten off a big case!
+<br>
+<br>
+With your newfound wealth, you decide to splurge at Ku’damm, a high end shopping street. 
+<br>
+<br>
+After staying at a nearby hotel, you notice something amiss about the bears standing outside… 
+<br>
+<br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+<h2 style="color:red">IMPORTANT!</h2>
+<div style="color: red">
+You are allowed to search up websites on google and use google maps to find directions to specific stores.
+<br>
+However, you may not google the locations of specific bears!
+</div>
+</div>
 
 
 

@@ -5,6 +5,7 @@ const ANSWERS = {
     "quadriga-unlock": "kranzler eck",
     "pirate-unlock": ["go sylt", "go-sylt", "let's go sylt", "lets go sylt"],
     "kudamm-unlock": "1384",
+    "hotel-palace-unlock":"blue",
     
     "pablo-clock": pabloAnswer,
     "quadriga-riddle": "blumen und wolken",

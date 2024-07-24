@@ -79,7 +79,7 @@ display_categories: [three]
       <div id="pablo-fallback" class="d-none">
         <img src="{{"assets/img/baer/fallback-clock.png" | relative_url }}" width=300>
       </div>
-    </div>
+    </div>    
   </div>
 
   <div class="baer-dialogue-group" baer-content="pablo-clock">
@@ -90,6 +90,11 @@ display_categories: [three]
     {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-5 %}
     {% include baer/dialogue.liquid path="assets/img/baer/pablo.png" title="bear-1" text=pablo-6 %}
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-4 right=true %}
+
+    <div class="centerhorizontal">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CIKzqwWpmIkAEvv_qEVBFNABhhb18u0&ehbc=2E312F" width="640" height="480"></iframe>
+    </div>
+    
   </div>
 </div>
 
