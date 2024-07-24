@@ -9,8 +9,18 @@ display_categories: [start, reset]
 horizontal: false
 ---
 
-
-
+<div class="centerhorizontal">
+You are a world famous detective who has just gotten off a big case!
+<br>
+<br>
+With your newfound wealth, you decide to splurge at Ku’damm, a high end shopping street. 
+<br>
+<br>
+After staying at a nearby hotel, you notice something amiss about the bears standing outside… 
+<br>
+<br>
+<b>IMPORTANT! You are allowed to search things up on google and use maps to find directions to specific locations</b>
+</div>
 
 
 

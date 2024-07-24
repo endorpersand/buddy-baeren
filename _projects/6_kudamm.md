@@ -60,6 +60,8 @@ category: six
   Pablo has been looking for you for 16 hours! Nevermind that… there's no time to run back to him. Think. THINK! What would Pablo have made of the password…
 {% endcapture %}
 
+
+
 <div class="d-flex flex-column align-items-center gap-5">
   <!-- TODO: handle this text -->
   <i>When you arrive, you observe the number on the top-right corner of Lord Ku'damm's plaque. What is it?</i>
