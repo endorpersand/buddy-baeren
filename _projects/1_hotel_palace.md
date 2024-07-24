@@ -54,5 +54,5 @@ horizontal: false
 </div>
 
 
-{% include baer/next.liquid baer-content="hotel-palace-unlock" %}
+{% include baer/next.liquid baer-content="hp-dialogue-2" %}
 
