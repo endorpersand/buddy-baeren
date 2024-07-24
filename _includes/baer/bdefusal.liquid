@@ -48,7 +48,7 @@
 
     window.onscroll = function(ev) {
     console.log("scroll!", (window.innerHeight + window.pageYOffset), document.body.offsetHeight);
-    if (Math.ceil(window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+    if (Math.ceil(window.innerHeight + window.pageYOffset) >= document.body.offsetHeight && document.body.offsetHeight >= 1000) {
         window.onscroll = null;
         countdownPuzzle();
     }
