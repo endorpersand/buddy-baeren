@@ -78,10 +78,10 @@ display_categories: [six]
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-7 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-7 %}
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-8 right=true %}
-  </div>
-  <div class="centerhorizontal">
-    <i>Pirate Bear clearly won't help you here.</i>
-    <i>Maybe there's something in Pablo's book that tells you where he is? Maybe the small things you've observed so far can help you?</i>
+    <div class="centerhorizontal">
+      <i>Pirate Bear clearly won't help you here.</i>
+      <i>Maybe there's something in Pablo's book that tells you where he is? Maybe the small things you've observed so far can help you?</i>
+    </div>
   </div>
 </div>
 
