@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Next
-img: assets/img/3.jpg
+img: assets/img/thumbnails/3.png
 importance: 3
 category: three
 display_categories: [four]
