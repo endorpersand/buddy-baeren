@@ -2,7 +2,7 @@
 layout: page
 title: START HERE!
 
-img: assets/img/1.png
+img: assets/img/thumbnails/1.png
 importance: 1
 category: start
 display_categories: [two]

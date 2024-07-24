@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Next
-img: assets/img/6.jpg
+img: assets/img/thumbnails/6.png
 category: six
 ---
 

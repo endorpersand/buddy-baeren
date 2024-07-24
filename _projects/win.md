@@ -1,9 +1,8 @@
 ---
 layout: page
-title: You Winned
+title: You Saved Ku'damm!
 permalink: /win.html
-category: fail
+category: win
 
 ---
-
-You win!
+{% include baer/win.liquid %}
