@@ -128,6 +128,10 @@ display_categories: [five]
     {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-9 %}
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-8 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/quadriga.png" title="bear-1" text=quad-10 %}
+
+    <div class = "centerhorizontal">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=10K2ey0skiIeybq425PCJ33v26jQQuRA&ehbc=2E312F" width="640" height="480"></iframe>
+    </div>
   </div>
 </div>
 

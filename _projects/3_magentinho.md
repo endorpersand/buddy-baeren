@@ -82,7 +82,7 @@ display_categories: [four]
 <div class="baer-dialogue-group">
   <div class="d-flex flex-column align-items-center gap-5">
     <!-- TODO: handle this text -->
-    <i>When you arrive, you observe Pablo's first designer (Künstler). Who is it?</i>
+    <i>Oh! Another bear in front of the store! I wonder who his sponsor is.</i>
     <form baer-key="magentinho-unlock">
       <input placeholder="Enter your answer...">
     </form>

@@ -11,6 +11,7 @@ horizontal: false
 
 ---
 
+
 <!-- Dialogue -->
 {% capture you-1 %}
   Hello, do you know how I can get to Ku'damm?
@@ -29,7 +30,22 @@ horizontal: false
   Uhuhu~. <span baer-content="hp-dialogue-2" baer-option="1">I shan't tell.</span> Enjoy your shopping spree in Ku'damm, my friend. The harmony here might not last forever. The streets you stroll down now might soon echo with more than just the sound of footsteps and cash registers &#x2728;.
 {% endcapture %}
 
-<div class="baer-dialogue-group">
+<div class = "baer-dialogue-group">
+<div class="centerhorizontal">
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1JKzdBfhLhVzGwpQpINZxrDflK18mlXE&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+
+
+<div class="d-flex flex-column align-items-center gap-5 centerhorizontal ">
+  <!-- TODO: handle this text -->
+  <i>You come walk outside <b>Hotel Palace Berlin</b> and see a sitting bear. What color is he?</i>
+    <form baer-key="hotel-palace-unlock"> <input placeholder="Enter your answer..."></form>
+    
+</div>
+</div>
+
+<div class="baer-dialogue-group" baer-content="hotel-palace-unlock">
+   
   {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
   {% include baer/dialogue.liquid path="assets/img/baer/hotel-palace.png" title="bear-1" text=hp-1 %}
   {% include baer/button_array.liquid key="hp-dialogue-2" names=you-2c %}
@@ -37,4 +53,6 @@ horizontal: false
   {% include baer/dialogue.liquid path="assets/img/baer/hotel-palace.png" title="bear-1" text=hp-2 after="hp-dialogue-2" %}
 </div>
 
-{% include baer/next.liquid baer-content="hp-dialogue-2" %}
+
+{% include baer/next.liquid baer-content="hotel-palace-unlock" %}
+

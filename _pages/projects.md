@@ -9,7 +9,7 @@ display_categories: [start, reset]
 horizontal: false
 ---
 
-<div class="centerhorizontal">
+<div class="baer-dialogue-group centerhorizontal">
 You are a world famous detective who has just gotten off a big case!
 <br>
 <br>
@@ -19,9 +19,10 @@ With your newfound wealth, you decide to splurge at Ku’damm, a high end shoppi
 After staying at a nearby hotel, you notice something amiss about the bears standing outside… 
 <br>
 <br>
+<div style="color: red">
 <b>IMPORTANT! You are allowed to search things up on google and use maps to find directions to specific locations</b>
 </div>
-
+</div>
 
 
 
