@@ -53,30 +53,32 @@ display_categories: [six]
   It's not fear of change, Pirate Bear. It's fear of losing sight of the goal. If you won't help me find Lord Ku'damm, I'll find him myself!
 {% endcapture %}
 
-<div class="d-flex flex-column align-items-center gap-5">
-  <!-- TODO: handle this text -->
-  <i>When you arrive, you observe the name of the restaurant this bear stands by. What is it?</i>
-  <form baer-key="pirate-unlock">
-    <input placeholder="Enter your answer...">
-  </form>
-</div>
+<div class="baer-dialogue-group">
+  <div class="d-flex flex-column align-items-center gap-5">
+    <!-- TODO: handle this text -->
+    <i>When you arrive, you observe the name of the restaurant this bear stands by. What is it?</i>
+    <form baer-key="pirate-unlock">
+      <input placeholder="Enter your answer...">
+    </form>
+  </div>
 
-<div class="baer-dialogue-group" baer-content="pirate-unlock">
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-1 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-2 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-2 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-3 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-3 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-4 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-4 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-5 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-5 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-6 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-6 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-7 right=true %}
-  {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-7 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-8 right=true %}
+  <div class="baer-dialogue-group" baer-content="pirate-unlock">
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-1 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-2 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-2 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-3 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-3 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-4 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-4 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-5 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-5 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-6 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-6 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-7 right=true %}
+    {% include baer/dialogue.liquid path="assets/img/baer/pirate.png" title="bear-1" text=pirate-7 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-8 right=true %}
+  </div>
 </div>
 
 {% include baer/next.liquid baer-content="pirate-unlock" %}

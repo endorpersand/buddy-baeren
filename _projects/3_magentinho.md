@@ -79,20 +79,22 @@ display_categories: [four]
   DID YOU KNOW THAT HERE AT TELEKOM WE OFFER PHISHING PROTECTION!
 {% endcapture %}
 
-<div class="d-flex flex-column align-items-center gap-5">
-  <!-- TODO: handle this text -->
-  <i>When you arrive, you observe Pablo's first designer (Künstler). Who is it?</i>
-  <form baer-key="magentinho-unlock">
-    <input placeholder="Enter your answer...">
-  </form>
-</div>
+<div class="baer-dialogue-group">
+  <div class="d-flex flex-column align-items-center gap-5">
+    <!-- TODO: handle this text -->
+    <i>When you arrive, you observe Pablo's first designer (Künstler). Who is it?</i>
+    <form baer-key="magentinho-unlock">
+      <input placeholder="Enter your answer...">
+    </form>
+  </div>
 
-<div class="baer-dialogue-group" baer-content="magentinho-unlock">
-  {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-1 %}
-  {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-2 %}
-  {% include baer/button_array.liquid key="mg-dialogue-1" names=you-1c separator=";" %}
+  <div class="baer-dialogue-group" baer-content="magentinho-unlock">
+    {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-1 %}
+    {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-2 %}
+    {% include baer/button_array.liquid key="mg-dialogue-1" names=you-1c separator=";" %}
+  </div>
 
-  <div baer-content="mg-dialogue-1">
+  <div class="baer-dialogue-group" baer-content="mg-dialogue-1">
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-1 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-3 %}
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-2 right=true %}
@@ -107,14 +109,17 @@ display_categories: [four]
     {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-8 %}
     {% include baer/button_array.liquid key="mg-dialogue-7" names=you-7c separator=";" %}
   </div>
-  <div baer-content="mg-dialogue-7">
+
+  <div class="baer-dialogue-group" baer-content="mg-dialogue-7">
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-7 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-9 %}
     {% include baer/dialogue.liquid path="assets/img/baer/detective.png" title="you" text=you-8 right=true %}
     {% include baer/dialogue.liquid path="assets/img/baer/magentinho.png" title="bear-1" text=mg-10 %}
   </div>
-</div>
 
-<i baer-content="mg-dialogue-7">You suspect you will not be able to get more out of him. Maybe it's time to look at the <b>Deutsche Telekom</b> packet that he gave you.</i>
+  <div>
+    <i baer-content="mg-dialogue-7">You suspect you will not be able to get more out of him. Maybe it's time to look at the <b>Deutsche Telekom</b> packet that he gave you.</i>
+  </div>
+</div>
 
 {% include baer/next.liquid baer-content="mg-dialogue-7" %}

@@ -1386,5 +1386,5 @@ form[baer-key] > input {
 }
 
 [baer-content]:not([baer-invert]):not(.baer-unhidden), [baer-content][baer-invert].baer-unhidden {
-  display: none;
+  display: none !important;
 }
