@@ -16,7 +16,7 @@ horizontal: false
   Hello, do you know how I can get to Ku'damm?
 {% endcapture %}
 {% capture hp-1 %}
-  Yes, huhu~. Just take a right, past the church until you see Commerzbank, hehe. My friend <b>Pablo</b> is along the way, it would be in your best interest to greet him while you’re here, uhuhu~.
+  Yes, huhu~. Just take a right, past the church and past Levi's, hehe. My friend <b>Pablo</b> is along the way, it would be in your best interest to greet him while you’re here, uhuhu~.
 {% endcapture %}
 {% capture you-2c %}
   I'll be sure to!,What do you mean by that?
@@ -26,7 +26,7 @@ horizontal: false
   <span baer-content="hp-dialogue-2" baer-option="1">Thanks for the directions, but uh, what you mean by "it would be in my best interest" to meet him?</span>
 {% endcapture %}
 {% capture hp-2 %}
-  Uhuhu~. Enjoy your shopping spree in Ku’damm, my friend. The harmony here might not last forever. There are whispers of a rising storm along the streets—a clash between the capitalist Buddy Bears and their communist counterparts. The streets you stroll down now might soon echo with more than just the sound of footsteps and cash registers &#x2728;.
+  Uhuhu~. <span baer-content="hp-dialogue-2" baer-option="1">I shan't tell.</span> Enjoy your shopping spree in Ku'damm, my friend. The harmony here might not last forever. The streets you stroll down now might soon echo with more than just the sound of footsteps and cash registers &#x2728;.
 {% endcapture %}
 
 <div class="baer-dialogue-group">
