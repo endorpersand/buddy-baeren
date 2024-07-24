@@ -1,7 +1,7 @@
 ---
 layout: page
 title: You Winned
-permalink: /fail.html
+permalink: /win.html
 category: fail
 
 ---
