@@ -50,7 +50,7 @@ for (let el of document.querySelectorAll(`form[${BAER_KEY_ATTR}]`)) {
 
 function validateAnswer(answer, userInput) {
     if (typeof answer === "string") {
-        return answer.toLowerCase() === userInput.toLowerCase();
+        return answer.toLowerCase().trim() === userInput.toLowerCase().trim();
     }
     if (answer instanceof Array) {
         return answer.some(e => validateAnswer(e, userInput));
